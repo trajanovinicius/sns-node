@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import express from 'express';
-import routes from './routes';
+const express = require('express')
+const routes = require('./routes');
 
 
 const app = express();
@@ -8,4 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(routes);
 
-app.listen(3030, () => console.log("Server started, Hello Dev!"))
+const port = process.env.PORT
+
+app.listen(port, () => console.log(`Server started on port ${port}!`))
