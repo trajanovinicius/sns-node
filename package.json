@@ -1,0 +1,29 @@
+{
+  "name": "sns-node",
+  "version": "1.0.0",
+  "description": "Send sms on amazon sns with node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trajanovinicius/sns-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trajanovinicius/sns-node/issues"
+  },
+  "homepage": "https://github.com/trajanovinicius/sns-node#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1202.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sucrase": "^3.25.0"
+  }
+}
